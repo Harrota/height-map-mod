@@ -1,33 +1,28 @@
 {
 	"schemaVersion": 1,
-	"id": "modid",
+	"id": "height_extractor",
 	"version": "${version}",
-	"name": "Example mod",
-	"description": "This is an example description! Tell everyone what your mod is about!",
+	"name": "Height Extractor Mod",
+	"description": "This mods extracting height map for selected coordinates",
 	"authors": [
-		"Me!"
+		"harrota"
 	],
 	"contact": {
-		"homepage": "https://fabricmc.net/",
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/Harrota/height-map-mod"
 	},
 	"license": "CC0-1.0",
-	"icon": "assets/modid/icon.png",
+	"icon": "assets/height_extractor/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"com.example.ExampleMod"
+			"com.harrota.height_extractor.HeightExtractorMod"
 		],
 		"client": [
-			"com.example.ExampleModClient"
+			"com.harrota.height_extractor.HeightMapClient"
 		]
 	},
 	"mixins": [
-		"modid.mixins.json",
-		{
-			"config": "modid.client.mixins.json",
-			"environment": "client"
-		}
+		"height_extractor.mixins.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.15.0",
